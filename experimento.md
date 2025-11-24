@@ -10,7 +10,7 @@ Impactos na Clareza de Design e Facilidade de Evolução**
   *Avaliação Experimental da Clean Architecture versus Arquitetura em Camadas: Impactos na Clareza de Design e Facilidade de Evolução*
 
 - **Tema**  
-  Comparação empírica de estilos arquiteturais (Clean Architecture vs arquitetura em camadas tradicional) quanto à clareza de design e à facilidade de evolução em sistemas Java/Spring Boot.
+  Comparação empírica de estilos arquiteturais (Clean Architecture vs arquitetura em camadas tradicional) quanto à clareza de design e à facilidade de evolução em sistemas/projetos.
 
 - **Autor**  
   - Pedro Henrique Moreira Caixeta Ferreira
