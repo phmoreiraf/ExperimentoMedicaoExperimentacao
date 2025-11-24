@@ -122,7 +122,7 @@ O experimento irá:
 
 ### 2.3 Stakeholders e impacto esperado
 
-- **Autores*  
+- **Autores**  
   - Adquirem experiência prática em desenho, condução e análise de experimento controlado em Engenharia de Software;  
   - Produzem evidências que podem ser publicadas ou reutilizadas em disciplinas futuras.
 
