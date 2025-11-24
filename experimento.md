@@ -4,8 +4,6 @@ Impactos na Clareza de Design e Facilidade de Evolução**
 
 ---
 
-## Entrega 1 – Identificação Básica, Contexto e Problema
-
 ### 1.1 Identificação básica do trabalho
 
 - **Título provisório do TCC**  
@@ -14,8 +12,7 @@ Impactos na Clareza de Design e Facilidade de Evolução**
 - **Tema**  
   Comparação empírica de estilos arquiteturais (Clean Architecture vs arquitetura em camadas tradicional) quanto à clareza de design e à facilidade de evolução em sistemas Java/Spring Boot.
 
-- **Autores**  
-  - Gabriel Vitor de Oliveira Morais  
+- **Autor**  
   - Pedro Henrique Moreira Caixeta Ferreira
 
 - **Curso**  
@@ -23,17 +20,6 @@ Impactos na Clareza de Design e Facilidade de Evolução**
 
 - **Instituição**  
   Instituto de Ciências Exatas e Informática – Pontifícia Universidade Católica de Minas Gerais (PUC Minas), Belo Horizonte – MG – Brasil.
-
-- **Orientadores de conteúdo (TCC I)**  
-  - Prof. Danilo Maia  
-  - Prof. Leonardo Vilela Cardoso  
-  - Prof. Raphael Ramos
-
-- **Orientador acadêmico (TCC I)**  
-  - Prof. Cleiton Silva Tavares
-
-- **Período letivo**  
-  2º semestre de 2025 – TCC I
 
 - **Versão deste documento de planejamento**  
   v1.0 – Planejamento inicial do experimento
@@ -63,8 +49,6 @@ Esse problema deriva da necessidade de orientar decisões arquiteturais com base
 
 ---
 
-## Entrega 2 – Escopo, Objetivos, Stakeholders/Impacto, Riscos de Alto Nível, Premissas e Critérios de Sucesso
-
 ### 2.1 Escopo
 
 #### 2.1.1 Escopo do estudo
@@ -72,7 +56,7 @@ Esse problema deriva da necessidade de orientar decisões arquiteturais com base
 O experimento irá:
 
 - Comparar duas versões de um mesmo sistema Java/Spring Boot:
-  - **Versão A**: arquitetura em camadas tradicional;
+  - **Versão A**: Arquitetura em camadas tradicional;
   - **Versão B**: Clean Architecture.
 - Aplicar tarefas de:
   - **Compreensão do sistema** (leitura e entendimento do código);
@@ -80,7 +64,7 @@ O experimento irá:
   - **Avaliação subjetiva** das arquiteturas por meio de questionário em escala Likert.
 - Coletar dados objetivos e subjetivos para comparar clareza de design e facilidade de evolução entre as arquiteturas.
 
-#### 2.1.2 Template de escopo (preenchido conforme visto em sala)
+#### 2.1.2 Template de escopo
 
 - **Contexto**  
   Experimento controlado conduzido em laboratório de informática da PUC Minas, em disciplina do curso de Engenharia de Software, com estudantes realizando tarefas práticas em duas variantes arquiteturais de um mesmo sistema.
@@ -138,7 +122,7 @@ O experimento irá:
 
 ### 2.3 Stakeholders e impacto esperado
 
-- **Autores do TCC**  
+- **Autores*  
   - Adquirem experiência prática em desenho, condução e análise de experimento controlado em Engenharia de Software;  
   - Produzem evidências que podem ser publicadas ou reutilizadas em disciplinas futuras.
 
@@ -240,7 +224,7 @@ O experimento será considerado bem-sucedido se:
 
 ---
 
-#### 2.7.2 Tabela de métricas (descrição e unidade)
+#### 2.7.2 Tabela de métricas
 
 Abaixo são apresentadas todas as métricas previstas no planejamento, com descrição e unidade.  
 Atende ao requisito de haver **pelo menos 10 métricas diferentes**.
