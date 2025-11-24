@@ -6,7 +6,7 @@ Impactos na Clareza de Design e Facilidade de Evolução**
 
 ### 1.1 Identificação básica do trabalho
 
-- **Título provisório do TCC**  
+- **Título**  
   *Avaliação Experimental da Clean Architecture versus Arquitetura em Camadas: Impactos na Clareza de Design e Facilidade de Evolução*
 
 - **Tema**  
