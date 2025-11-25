@@ -4,6 +4,7 @@ Impactos na Clareza de Design e Facilidade de Evolução**
 
 ---
 
+### 1
 ### 1.1 Identificação básica do trabalho
 
 - **Título**  
@@ -49,6 +50,7 @@ Esse problema deriva da necessidade de orientar decisões arquiteturais com base
 
 ---
 
+### 2
 ### 2.1 Escopo
 
 #### 2.1.1 Escopo do estudo
@@ -122,9 +124,9 @@ O experimento irá:
 
 ### 2.3 Stakeholders e impacto esperado
 
-- **Autores**  
-  - Adquirem experiência prática em desenho, condução e análise de experimento controlado em Engenharia de Software;  
-  - Produzem evidências que podem ser publicadas ou reutilizadas em disciplinas futuras.
+- **Autor**  
+  - Adquire experiência prática em desenho, condução e análise de experimento controlado em Engenharia de Software;  
+  - Produz evidências que podem ser reutilizadas em disciplinas futuras ou em publicações.
 
 - **Estudantes participantes**  
   - Vivenciam na prática diferenças entre estilos arquiteturais;  
@@ -173,7 +175,7 @@ O experimento irá:
 O experimento será considerado bem-sucedido se:
 
 1. **Amostra válida**  
-   - Pelo menos um número mínimo de participantes (por exemplo, ≥ 60) completar todas as tarefas em ambas as arquiteturas, com dados consistentes.
+   - Um número mínimo de participantes (por exemplo, ≥ 60) completa todas as tarefas em ambas as arquiteturas, com dados consistentes.
 
 2. **Coleta de dados completa**  
    - Para cada participante e arquitetura, existirem registros de:  
@@ -226,9 +228,6 @@ O experimento será considerado bem-sucedido se:
 
 #### 2.7.2 Tabela de métricas
 
-Abaixo são apresentadas todas as métricas previstas no planejamento, com descrição e unidade.  
-Atende ao requisito de haver **pelo menos 10 métricas diferentes**.
-
 | ID   | Métrica                                                                                                                          | Unidade                                 |
 |------|----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
 | M1   | **Tempo de compreensão do sistema** – tempo necessário para que o participante entenda o propósito e o funcionamento do sistema em cada arquitetura. | Segundos                                |
@@ -242,7 +241,7 @@ Atende ao requisito de haver **pelo menos 10 métricas diferentes**.
 | M9   | **Risco percebido de impacto em outras partes** – média das respostas à afirmação “A estrutura da arquitetura reduziu o risco de impactar outras partes do sistema”. | Pontos em escala Likert (1–5)          |
 | M10  | **Percepção de manutenção e evolução** – média das respostas à afirmação “Esta arquitetura favorece a manutenção e evolução do sistema”. | Pontos em escala Likert (1–5)          |
 | M11  | **Taxa de sucesso na implementação** – proporção de participantes que implementam corretamente a funcionalidade solicitada (todos os testes de aceitação passam). | Percentual (%)                          |
-| M12  | **Diferença relativa de tempo entre arquiteturas** – razão entre os tempos médios de compreensão/implementação (por exemplo, tempo\_Clean ÷ tempo\_Camadas) para cada tipo de tarefa. | Valor adimensional (razão entre tempos) |
+| M12  | **Diferença relativa de tempo entre arquiteturas** – razão entre os tempos médios de compreensão/implementação (por exemplo, tempo_Clean ÷ tempo_Camadas) para cada tipo de tarefa. | Valor adimensional (razão entre tempos) |
 
 ---
 
@@ -255,5 +254,302 @@ O modelo GQM organiza o experimento de forma sistemática:
 - As métricas são reutilizadas em diferentes perguntas quando necessário, assegurando consistência e permitindo análises cruzadas entre esforço, percepções e resultados.
 
 Essa estrutura fornece uma base clara para a coleta e análise de dados, garantindo alinhamento entre o problema de pesquisa, os objetivos do TCC, o desenho experimental e as métricas que serão efetivamente observadas.
+
+---
+
+### 3
+### 3.1 Modelo conceitual
+
+O modelo conceitual do estudo parte da hipótese de que o **estilo arquitetural** adotado em um sistema (Clean Architecture ou arquitetura em camadas tradicional) influencia:
+
+1. A **clareza de design**, refletida em:
+   - Facilidade de compreensão do sistema;
+   - Clareza da organização de classes e pacotes;
+   - Percepção de estrutura mais ou menos “explicativa”.
+
+2. A **facilidade de evolução**, refletida em:
+   - Esforço para implementar uma modificação funcional simples (tempo e tamanho da mudança de código);
+   - Risco percebido de impactar outras partes do sistema;
+   - Percepção de capacidade de manutenção e evolução no médio prazo.
+
+Em termos conceituais:
+
+- **Estilo arquitetural (fator principal)** → afeta diretamente:
+  - **Esforço de compreensão** (tempo e clareza percebida);
+  - **Esforço de modificação** (tempo, tamanho da mudança, sucesso);
+  - **Percepções de manutenção/evolução** (Likert).
+- **Perfil do participante** (experiência com Spring Boot, contato prévio com Clean Architecture, experiência profissional) atua como **variáveis de controle/covariáveis**, podendo moderar os efeitos observados, mas não é manipulado no experimento.
+
+### 3.2 Hipóteses do estudo
+
+Com base no modelo conceitual e na literatura de arquitetura e design de software, são definidas as seguintes hipóteses substantivas:
+
+- **H1 – Esforço de compreensão**  
+  Há diferença significativa no esforço de compreensão do sistema entre a arquitetura em camadas e a Clean Architecture, considerando tempo de compreensão e clareza percebida da estrutura do código.
+
+- **H2 – Esforço de implementação de modificações**  
+  Há diferença significativa no esforço para implementar uma modificação funcional simples entre as duas arquiteturas, considerando tempo de implementação, tamanho da mudança de código e taxa de sucesso na implementação.
+
+- **H3 – Percepções de clareza, risco e evolutividade**  
+  As percepções de facilidade para localizar onde alterar, facilidade de navegação, risco percebido de impacto em outras partes do sistema e capacidade de manutenção/evolução diferem entre Clean Architecture e arquitetura em camadas.
+
+- **H4 – Coerência entre métricas objetivas e percepções subjetivas**  
+  Existe associação entre métricas objetivas (tempos, tamanho da mudança, taxa de sucesso) e percepções subjetivas (escores Likert), de forma que arquiteturas avaliadas como mais claras e evolutivas tendem a apresentar menor esforço de compreensão e modificação.
+
+Nas análises estatísticas, essas hipóteses serão operacionalizadas por meio de hipóteses nulas (H0) de igualdade entre arquiteturas, testadas com nível de significância de 5%.
+
+---
+
+### 3.3 Variáveis, fatores, tratamentos e objetos de estudo
+
+#### 3.3.1 Variáveis do estudo
+
+A tabela abaixo resume as principais variáveis, seu papel no experimento e uma breve descrição.
+
+| Variável                                      | Tipo                        | Descrição resumida                                                                 |
+|----------------------------------------------|-----------------------------|------------------------------------------------------------------------------------|
+| Estilo arquitetural                          | Independente (fator)        | Estilo de arquitetura utilizado no sistema: arquitetura em camadas ou Clean.      |
+| Tempo de compreensão (M1)                    | Dependente                  | Tempo, em segundos, para o participante compreender o sistema em cada arquitetura.|
+| Tempo de implementação (M2)                  | Dependente                  | Tempo, em segundos, para implementar a modificação funcional em cada arquitetura. |
+| Tamanho da mudança de código (M3)           | Dependente                  | Linhas adicionadas/removidas/modificadas segundo `git diff`.                      |
+| Clareza da estrutura (M4, M6)               | Dependente (Likert)         | Percepção de clareza da estrutura e da organização de classes/pacotes.           |
+| Facilidade para localizar/implementar (M5,M7)| Dependente (Likert)        | Percepções sobre localizar onde alterar e implementar a modificação.             |
+| Facilidade de navegação (M8)                | Dependente (Likert)         | Percepção de quão simples foi navegar entre arquivos e componentes.              |
+| Risco percebido de impacto (M9)             | Dependente (Likert)         | Percepção de risco de afetar outras partes do sistema ao modificar o código.     |
+| Percepção de manutenção/evolução (M10)      | Dependente (Likert)         | Percepção sobre o quanto a arquitetura favorece manutenção e evolução.           |
+| Taxa de sucesso na implementação (M11)      | Dependente                  | Percentual de participantes que implementam corretamente a funcionalidade.       |
+| Experiência com Spring Boot                 | Controle / covariável       | Indica se o participante já trabalhou com Spring Boot (sim/não).                 |
+| Contato prévio com Clean Architecture       | Controle / covariável       | Indica se o participante já teve contato com Clean Architecture (sim/não).       |
+| Experiência profissional em desenvolvimento | Controle / covariável       | Indica se o participante tem experiência profissional na área (sim/não).         |
+
+---
+
+#### 3.3.2 Fatores, tratamentos e combinações
+
+No estudo, considera-se explicitamente um **fator principal** e um fator de **ordem/contrabalançamento**:
+
+- **Fator 1 – Estilo arquitetural (fator principal)**  
+  - Tratamento A: Arquitetura em camadas tradicional  
+  - Tratamento B: Clean Architecture  
+
+- **Fator 2 – Ordem de exposição (fator de contrabalançamento)**  
+  - Sequência 1: primeiro Camadas → depois Clean  
+  - Sequência 2: primeiro Clean → depois Camadas  
+
+A tabela a seguir resume os fatores, tratamentos e combinações relevantes:
+
+| Fator                 | Tratamentos / Níveis                                 | Combinações no experimento                                   |
+|-----------------------|------------------------------------------------------|--------------------------------------------------------------|
+| Estilo arquitetural   | A: Camadas; B: Clean                                | Cada participante interage com A e B (delineamento intra-sujeito). |
+| Ordem de exposição    | Seq1: A→B; Seq2: B→A                                 | Grupo Seq1: tarefas em Camadas primeiro; Grupo Seq2: tarefas em Clean primeiro. |
+
+Como o delineamento é **intra-sujeito**, todos os participantes são submetidos a ambos os tratamentos do fator principal (arquitetura). A ordem em que cada tratamento é aplicado é controlada pelo segundo fator (ordem de exposição), reduzindo viés de aprendizagem.
+
+---
+
+#### 3.3.3 Objetos de estudo
+
+Os objetos de estudo são dois protótipos de um mesmo sistema, desenvolvidos em:
+
+- Java 17;
+- Spring Boot 3.3.x;
+- Mesmo domínio e mesmos requisitos funcionais.
+
+A diferença entre eles está exclusivamente no **estilo arquitetural** adotado:
+
+- Protótipo em **arquitetura em camadas tradicional**, com camadas como controller, service, repository etc.;
+- Protótipo em **Clean Architecture**, com separação explícita entre regras de negócio (casos de uso, entidades) e detalhes de infraestrutura (adapters, frameworks).
+
+Essa construção garante comparabilidade entre as arquiteturas, já que o domínio e as funcionalidades são mantidos constantes.
+
+---
+
+### 3.4 Desenho experimental
+
+O desenho experimental é do tipo **intra-sujeito (within-subjects)**: todos os participantes realizam as mesmas tarefas em ambas as arquiteturas, em momentos distintos. A ordem das arquiteturas é contrabalanceada entre os participantes, de forma que aproximadamente metade da turma começa pela arquitetura em camadas e a outra metade pela Clean Architecture. :contentReference[oaicite:1]{index=1}  
+
+O experimento é estruturado em três etapas principais:
+
+1. **Leitura e compreensão do código-fonte**  
+   - Cada participante recebe acesso ao repositório de uma das arquiteturas (conforme a ordem sorteada);  
+   - O participante analisa o código até se sentir apto a responder questões de compreensão;  
+   - O tempo de compreensão é medido (M1) e, em seguida, o participante responde a questões sobre entendimento do sistema e percepções de clareza (M4, M6).
+
+2. **Implementação de uma modificação funcional simples**  
+   - Com base em um requisito de mudança previamente definido, o participante implementa a modificação na arquitetura que está utilizando naquele momento;  
+   - O tempo de implementação é registrado (M2);  
+   - Ao final, a diferença de código é analisada via `git diff` (M3) e verifica-se se a implementação atende aos testes de aceitação (M11);  
+   - O participante responde às questões sobre facilidade de localizar onde alterar, facilidade de navegação e risco percebido de impacto (M5, M7, M8, M9).
+
+3. **Repetição do ciclo na outra arquitetura**  
+   - O participante repete as etapas de compreensão e implementação na outra arquitetura (Clean ou Camadas, conforme a ordem sorteada);  
+   - Novos tempos, diferenças de código e percepções são coletados, permitindo comparações intra-sujeito entre as arquiteturas.
+
+Ao final do experimento, o questionário também coleta percepções globais sobre a capacidade de manutenção e evolução do sistema em cada arquitetura (M10) e dados de perfil (experiência e contato prévio).
+
+---
+
+### 4
+### 4.1 População, sujeitos e amostragem
+
+- **População-alvo**  
+  Estudantes de cursos de Engenharia de Software (ou áreas afins) que já tenham cursado disciplinas básicas de programação orientada a objetos e desenvolvimento de aplicações web.
+
+- **População acessível**  
+  Turma de aproximadamente **70 estudantes** do curso de Engenharia de Software da PUC Minas, matriculada em disciplina que dispõe de laboratório de informática e cujo conteúdo permite a aplicação do experimento em aula.
+
+- **Sujeitos do experimento**  
+  - Cada estudante participante é considerado um sujeito experimental;  
+  - Todos executam as tarefas em ambas as arquiteturas (delineamento intra-sujeito);  
+  - Os sujeitos são tratados de forma anônima nas análises, usando códigos ou identificadores numéricos.
+
+- **Amostragem**  
+  - Amostragem por conveniência/censo da turma: todos os estudantes presentes na aula em que o experimento ocorre são convidados a participar;  
+  - A participação é voluntária, e a não participação não implica qualquer prejuízo acadêmico;  
+  - Dados de perfil (idade, experiência com Spring Boot, contato prévio com Clean Architecture e experiência profissional) são coletados para caracterizar a amostra e eventualmente atuar como covariáveis.
+
+---
+
+### 4.2 Instrumentação e protocolo operacional
+
+#### 4.2.1 Instrumentos de coleta e apoio
+
+- **Ambiente de desenvolvimento**  
+  - IDE: IntelliJ IDEA (ou equivalente configurado para Java 17/Spring Boot 3.3.x);  
+  - JDK 17 instalado em todas as máquinas.
+
+- **Controle de versão**  
+  - Git, com repositórios separados para cada arquitetura (Camadas e Clean);  
+  - Uso de `git diff` para mensurar tamanho das mudanças de código (M3).
+
+- **Coleta de tempos**  
+  - Cronômetros (podem ser físicos ou digitais), operados pelos pesquisadores para garantir consistência na medição do tempo de compreensão (M1) e de implementação (M2).
+
+- **Questionário eletrônico**  
+  - Formulário (por exemplo, Google Forms) para registrar:
+    - Dados de perfil (idade, experiência prévia etc.);  
+    - Percepções em escala Likert sobre estrutura, facilidade de modificação, risco e evolutividade (M4–M10).
+
+- **Roteiro de tarefas**  
+  - Documento entregue aos participantes com:
+    - Instruções sobre o objetivo da atividade;  
+    - Descrição da funcionalidade a ser modificada/implementada;  
+    - Orientações sobre como registrar o término de cada etapa.
+
+---
+
+#### 4.2.2 Variáveis (visão operacional)
+
+A tabela abaixo reapresenta as variáveis sob a ótica da **instrumentação**, destacando como são medidas.
+
+| Variável                         | Tipo       | Como é medida / Instrumento                           | Escala          |
+|----------------------------------|------------|--------------------------------------------------------|-----------------|
+| Estilo arquitetural             | Fator      | Atribuição do repositório (Camadas ou Clean)          | Nominal         |
+| Tempo de compreensão (M1)       | Dependente | Cronômetro (início da leitura até declaração de compreensão) | Razão (segundos)|
+| Tempo de implementação (M2)     | Dependente | Cronômetro (início da codificação até submissão)      | Razão (segundos)|
+| Tamanho da mudança (M3)         | Dependente | Saída do comando `git diff` (linhas afetadas)         | Razão (linhas)  |
+| Percepções Likert (M4–M10)      | Dependente | Questionário eletrônico (afirmações 1–5)              | Ordinal (1–5)   |
+| Taxa de sucesso (M11)           | Dependente | Resultado dos testes de aceitação (sucesso/falha)     | Proporção (%)   |
+| Experiência com Spring Boot     | Controle   | Questão dicotômica no questionário (sim/não)          | Nominal         |
+| Contato prévio com Clean        | Controle   | Questão dicotômica no questionário (sim/não)          | Nominal         |
+| Experiência profissional        | Controle   | Questão dicotômica no questionário (sim/não)          | Nominal         |
+
+---
+
+#### 4.2.3 Fatores, tratamentos e combinações (visão operacional)
+
+A tabela abaixo detalha, agora do ponto de vista de **execução em sala**, como os fatores e tratamentos se concretizam:
+
+| Fator              | Tratamentos / Níveis                                 | Implementação no protocolo                                             |
+|--------------------|------------------------------------------------------|-------------------------------------------------------------------------|
+| Estilo arquitetural| A: Camadas; B: Clean                                | Repositórios separados: um em Camadas, outro em Clean.                 |
+| Ordem de exposição | Seq1: A→B; Seq2: B→A                                 | Sorteio/atribuição dos participantes para Seq1 ou Seq2.                |
+
+**Combinações**:
+
+- **Grupo Seq1**  
+  1. Tarefa de compreensão e modificação na arquitetura em camadas (A);  
+  2. Tarefa de compreensão e modificação na Clean Architecture (B).
+
+- **Grupo Seq2**  
+  1. Tarefa de compreensão e modificação na Clean Architecture (B);  
+  2. Tarefa de compreensão e modificação na arquitetura em camadas (A).
+
+---
+
+### 4.3 Protocolo operacional (passo a passo)
+
+Um possível protocolo operacional em aula é:
+
+1. **Abertura e instruções gerais (5–10 min)**  
+   - Apresentação breve do objetivo do experimento;  
+   - Esclarecimento de que os dados serão anonimizados e utilizados apenas para fins acadêmicos.
+
+2. **Distribuição dos grupos e repositórios (5 min)**  
+   - Sorteio ou definição de quais alunos ficarão em Seq1 (A→B) e Seq2 (B→A);  
+   - Entrega dos links dos repositórios Git correspondentes à primeira arquitetura de cada grupo.
+
+3. **Tarefa 1 – Compreensão (Arquitetura 1)**  
+   - Início simultâneo da atividade;  
+   - Registro do tempo de compreensão (M1) para cada participante;  
+   - Preenchimento das questões de percepção relativas à compreensão e estrutura.
+
+4. **Tarefa 2 – Implementação (Arquitetura 1)**  
+   - Apresentação do requisito de modificação;  
+   - Registro do tempo de implementação (M2);  
+   - Coleta da diferença de código via `git diff` (M3);  
+   - Verificação de sucesso na implementação (M11);  
+   - Preenchimento das questões de percepção relativas à facilidade de modificação, navegação e risco (M5–M9).
+
+5. **Repetição nas Tarefas 3 e 4 com a Arquitetura 2**  
+   - O ciclo de compreensão e implementação é repetido para a segunda arquitetura de cada grupo;  
+   - Novos registros de M1, M2, M3, M11 e respostas Likert (M4–M10).
+
+6. **Encerramento (5–10 min)**  
+   - Coleta de eventuais comentários qualitativos dos participantes;  
+   - Agradecimento e reforço de que os resultados serão consolidados no TCC.
+
+---
+
+### 4.4 Plano de análise de dados (pré-execução)
+
+O plano de análise é definido **antes da execução** do experimento, para reduzir vieses e garantir transparência:
+
+1. **Verificação e limpeza dos dados**
+   - Conferir se todos os participantes têm:
+     - M1, M2, M3, M11 registrados nas duas arquiteturas;  
+     - Respostas completas às questões Likert;  
+   - Tratar dados ausentes (por exemplo, excluir pares incompletos para análises pareadas).
+
+2. **Análise descritiva**
+   - Calcular, para cada arquitetura:
+     - Mediana, média, desvio-padrão e intervalo interquartil de M1, M2, M3;  
+     - Distribuição de respostas Likert (frequências e médias) para M4–M10;  
+     - Taxa de sucesso M11.
+
+3. **Teste de normalidade**
+   - Aplicar o **teste de Shapiro–Wilk** para verificar a normalidade das distribuições de M1, M2, M3 (por arquitetura).
+
+4. **Comparação entre arquiteturas (teste de hipóteses)**
+   - Como se trata de dados pareados (mesmos participantes em ambas as arquiteturas), e assumindo que a normalidade provavelmente não será satisfeita:
+     - Utilizar o **teste de Wilcoxon Signed-Rank** para comparar:
+       - Tempo de compreensão (M1) entre Camadas e Clean (H1);  
+       - Tempo de implementação (M2) (H2);  
+       - Tamanho da mudança (M3) (H2);  
+       - Escores Likert (M4–M10) (H3);  
+     - Comparar taxas de sucesso (M11) por meio de proporções (por exemplo, teste de sinais ou análise descritiva reforçada).
+
+5. **Associações entre métricas objetivas e percepções (H4)**
+   - Calcular correlações (por exemplo, **Spearman**) entre:
+     - M1, M2, M3, M11 e os escores médios de M4–M10;  
+   - Verificar se menores tempos e tamanhos de mudança se associam a percepções mais positivas de clareza, facilidade e evolutividade.
+
+6. **Interpretação e ligação com as hipóteses**
+   - Para cada hipótese (H1–H4):
+     - Verificar se os resultados suportam ou não a hipótese substantiva;  
+     - Discutir implicações práticas para escolha entre Clean Architecture e arquitetura em camadas;  
+     - Identificar possíveis ameaças à validade (tamanho da amostra, viés de aprendizagem residual, experiência prévia etc.).
+
+Esse plano de análise garante que, ao final da coleta, o experimento esteja alinhado ao problema de pesquisa, às hipóteses formuladas e às boas práticas de experimentação em Engenharia de Software.
 
 ---
