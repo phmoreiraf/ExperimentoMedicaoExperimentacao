@@ -4,7 +4,6 @@ Impactos na Clareza de Design e Facilidade de Evolução**
 
 ---
 
-### 1
 ### 1.1 Identificação básica do trabalho
 
 - **Título**  
@@ -50,7 +49,6 @@ Esse problema deriva da necessidade de orientar decisões arquiteturais com base
 
 ---
 
-### 2
 ### 2.1 Escopo
 
 #### 2.1.1 Escopo do estudo
@@ -257,7 +255,6 @@ Essa estrutura fornece uma base clara para a coleta e análise de dados, garanti
 
 ---
 
-### 3
 ### 3.1 Modelo conceitual
 
 O modelo conceitual do estudo parte da hipótese de que o **estilo arquitetural** adotado em um sistema (Clean Architecture ou arquitetura em camadas tradicional) influencia:
@@ -389,7 +386,6 @@ Ao final do experimento, o questionário também coleta percepções globais sob
 
 ---
 
-### 4
 ### 4.1 População, sujeitos e amostragem
 
 - **População-alvo**  
