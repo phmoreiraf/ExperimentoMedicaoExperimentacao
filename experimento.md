@@ -554,17 +554,16 @@ O fluxograma a seguir sintetiza o passo a passo operacional do experimento, dest
 
 ```mermaid
 flowchart TD
-    A[Planejamento do experimento<br/>(autor + orientadores)] --> B[Preparação do ambiente<br/>(laboratório, IDE, JDK 17, Git, formulários eletrônicos)]
-    B --> C[Configuração dos repositórios<br/>(Arquitetura em Camadas e Clean Architecture)]
-    C --> D[Definição dos grupos Seq1 e Seq2<br/>(ordem de exposição A→B ou B→A)]
-    D --> E[Briefing aos participantes<br/>(explicação do objetivo, ética, instruções gerais)]
-    E --> F[Tarefa 1 - Compreensão na Arquitetura 1<br/>(coleta de M1, percepções M4 e M6)]
-    F --> G[Tarefa 2 - Implementação na Arquitetura 1<br/>(coleta de M2, M3, M11 e percepções M5, M7, M8, M9)]
-    G --> H[Tarefa 3 - Compreensão na Arquitetura 2<br/>(coleta de M1, percepções M4 e M6)]
-    H --> I[Tarefa 4 - Implementação na Arquitetura 2<br/>(coleta de M2, M3, M11 e percepções M5, M7, M8, M9, M10)]
-    I --> J[Encerramento em sala<br/>(coleta de comentários qualitativos dos estudantes)]
-    J --> K[Consolidação dos dados<br/>(autor + orientadores)]
-    K --> L[Análise estatística e interpretação<br/>(aplicação do plano da Seção 4.4)]
-    L --> M[Redação dos resultados e conclusões<br/>(autor + orientadores)]
+    A["Planejamento do experimento (autor e orientadores)"] --> B["Preparação do ambiente (laboratório, IDE, JDK 17, Git, formulários)"]
+    B --> C["Configuração dos repositórios (Arquitetura em Camadas e Clean Architecture)"]
+    C --> D["Definição dos grupos Seq1 e Seq2 (ordem Camadas-Clean ou Clean-Camadas)"]
+    D --> E["Briefing aos participantes (objetivo, ética, instruções gerais)"]
+    E --> F["Tarefa 1 - Compreensão na Arquitetura 1 (coleta de M1, M4, M6)"]
+    F --> G["Tarefa 2 - Implementação na Arquitetura 1 (coleta de M2, M3, M11, M5, M7, M8, M9)"]
+    G --> H["Tarefa 3 - Compreensão na Arquitetura 2 (coleta de M1, M4, M6)"]
+    H --> I["Tarefa 4 - Implementação na Arquitetura 2 (coleta de M2, M3, M11, M5, M7, M8, M9, M10)"]
+    I --> J["Encerramento em sala (comentários qualitativos dos estudantes)"]
+    J --> K["Consolidação dos dados (autor e orientadores)"]
+    K --> L["Análise estatística e interpretação (aplicação do plano da Seção 4.4)"]
+    L --> M["Redação dos resultados e conclusões (autor e orientadores)"]
 
----
