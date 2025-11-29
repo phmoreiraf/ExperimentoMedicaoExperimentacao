@@ -4,6 +4,7 @@ Impactos na Clareza de Design e Facilidade de Evolução**
 
 ---
 
+### 1. Identificação Básica, Contexto e Problema
 ### 1.1 Identificação básica do trabalho
 
 - **Título**  
@@ -21,8 +22,7 @@ Impactos na Clareza de Design e Facilidade de Evolução**
 - **Instituição**  
   Instituto de Ciências Exatas e Informática – Pontifícia Universidade Católica de Minas Gerais (PUC Minas), Belo Horizonte – MG – Brasil.
 
-- **Versão deste documento de planejamento**  
-  v1.0 – Planejamento inicial do experimento
+- **Versão deste documento de planejamento: **  v1.3
 
 ---
 
@@ -49,7 +49,18 @@ Esse problema deriva da necessidade de orientar decisões arquiteturais com base
 
 ---
 
+### 2. Escopo, Objetivo, Stakeholders/Impacto, Riscos de alto nível, premissas e critérios de sucesso
 ### 2.1 Escopo
+
+De acordo com o template de definição de escopo apresentado em sala, o experimento pode ser descrito da seguinte forma:
+
+> **Analisar** duas versões de um mesmo sistema Java/Spring Boot (uma em arquitetura em camadas tradicional e outra em Clean Architecture)  
+> **com o propósito de** comparar empiricamente estilos arquiteturais  
+> **com respeito ao** impacto na clareza de design e na facilidade de evolução do código  
+> **do ponto de vista de** estudantes e pesquisadores de Engenharia de Software interessados em decisões arquiteturais  
+> **no contexto de** um experimento controlado conduzido em disciplina de Engenharia de Software da PUC Minas, utilizando um laboratório de informática com tarefas práticas de compreensão e modificação de código.
+
+---
 
 #### 2.1.1 Escopo do estudo
 
@@ -64,7 +75,7 @@ O experimento irá:
   - **Avaliação subjetiva** das arquiteturas por meio de questionário em escala Likert.
 - Coletar dados objetivos e subjetivos para comparar clareza de design e facilidade de evolução entre as arquiteturas.
 
-#### 2.1.2 Template de escopo
+#### 2.1.2 Template de escopo (detalhado)
 
 - **Contexto**  
   Experimento controlado conduzido em laboratório de informática da PUC Minas, em disciplina do curso de Engenharia de Software, com estudantes realizando tarefas práticas em duas variantes arquiteturais de um mesmo sistema.
@@ -151,7 +162,7 @@ O experimento irá:
 |--------------------------------------------|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | R1 – Baixa participação de alunos          | Número de participantes menor que o planejado, prejudicando a análise estatística          | Agendar a aplicação em aula obrigatória; prever data reserva; comunicar com antecedência |
 | R2 – Dados incompletos ou inconsistentes   | Ausência de tempos, respostas faltantes em questionários ou commits sem `git diff` adequado| Testar previamente formulários e roteiro; revisar dados logo após cada sessão            |
-| R3 – Viés de ordem entre arquiteturas      | A arquitetura utilizada primeiro influencia o desempenho na segunda (efeito de aprendizado) | Sortear a ordem das arquiteturas e balancear: metade começa em cada variante            |
+| R3 – Viés de ordem entre arquiteturas      | A arquitetura utilizada primeiro influencia o desempenho na segunda (efeito de aprendizado) | Sortear a ordem das arquiteturas e balancear: metade começa em cada variante             |
 | R4 – Problemas técnicos no laboratório     | Falha em máquinas, IDE, rede ou repositórios durante a aplicação                           | Validar o ambiente antes; ter máquinas reserva; manter cópias locais dos repositórios    |
 | R5 – Tempo de aula insuficiente            | As tarefas não cabem no tempo disponível, comprometendo a coleta completa                  | Realizar piloto com pequeno grupo; ajustar complexidade da tarefa e tempo previsto       |
 
@@ -231,13 +242,13 @@ O experimento será considerado bem-sucedido se:
 | M1   | **Tempo de compreensão do sistema** – tempo necessário para que o participante entenda o propósito e o funcionamento do sistema em cada arquitetura. | Segundos                                |
 | M2   | **Tempo de implementação da modificação** – tempo total gasto para implementar a funcionalidade solicitada em cada arquitetura. | Segundos                                |
 | M3   | **Tamanho da mudança de código** – quantidade de linhas adicionadas, removidas ou modificadas entre a versão inicial e a final (via `git diff`). | Linhas de código                        |
-| M4   | **Clareza da estrutura para compreensão** – média das respostas em escala Likert (1–5) à afirmação “A estrutura do código facilitou a compreensão do sistema”, por arquitetura. | Pontos em escala Likert (1–5)          |
-| M5   | **Facilidade para localizar onde alterar** – média das respostas em escala Likert (1–5) à afirmação “Foi fácil identificar onde implementar as alterações necessárias”. | Pontos em escala Likert (1–5)          |
-| M6   | **Clareza da organização de classes e pacotes** – média das respostas à afirmação “A organização das classes e pacotes estava clara e coerente”. | Pontos em escala Likert (1–5)          |
-| M7   | **Facilidade de implementação** – média das respostas à afirmação “A arquitetura facilitou a implementação da modificação solicitada”. | Pontos em escala Likert (1–5)          |
-| M8   | **Facilidade de navegação no código** – média das respostas à afirmação “Foi simples navegar entre arquivos e localizar os componentes corretos”. | Pontos em escala Likert (1–5)          |
-| M9   | **Risco percebido de impacto em outras partes** – média das respostas à afirmação “A estrutura da arquitetura reduziu o risco de impactar outras partes do sistema”. | Pontos em escala Likert (1–5)          |
-| M10  | **Percepção de manutenção e evolução** – média das respostas à afirmação “Esta arquitetura favorece a manutenção e evolução do sistema”. | Pontos em escala Likert (1–5)          |
+| M4   | **Clareza da estrutura para compreensão** – média das respostas em escala Likert (1–5) à afirmação “A estrutura do código facilitou a compreensão do sistema”, por arquitetura. | Pontos em escala Likert (1–5)           |
+| M5   | **Facilidade para localizar onde alterar** – média das respostas em escala Likert (1–5) à afirmação “Foi fácil identificar onde implementar as alterações necessárias”. | Pontos em escala Likert (1–5)           |
+| M6   | **Clareza da organização de classes e pacotes** – média das respostas à afirmação “A organização das classes e pacotes estava clara e coerente”. | Pontos em escala Likert (1–5)           |
+| M7   | **Facilidade de implementação** – média das respostas à afirmação “A arquitetura facilitou a implementação da modificação solicitada”. | Pontos em escala Likert (1–5)           |
+| M8   | **Facilidade de navegação no código** – média das respostas à afirmação “Foi simples navegar entre arquivos e localizar os componentes corretos”. | Pontos em escala Likert (1–5)           |
+| M9   | **Risco percebido de impacto em outras partes** – média das respostas à afirmação “A estrutura da arquitetura reduziu o risco de impactar outras partes do sistema”. | Pontos em escala Likert (1–5)           |
+| M10  | **Percepção de manutenção e evolução** – média das respostas à afirmação “Esta arquitetura favorece a manutenção e evolução do sistema”. | Pontos em escala Likert (1–5)           |
 | M11  | **Taxa de sucesso na implementação** – proporção de participantes que implementam corretamente a funcionalidade solicitada (todos os testes de aceitação passam). | Percentual (%)                          |
 | M12  | **Diferença relativa de tempo entre arquiteturas** – razão entre os tempos médios de compreensão/implementação (por exemplo, tempo_Clean ÷ tempo_Camadas) para cada tipo de tarefa. | Valor adimensional (razão entre tempos) |
 
@@ -255,6 +266,7 @@ Essa estrutura fornece uma base clara para a coleta e análise de dados, garanti
 
 ---
 
+### 3. Modelo conceitual e hipóteses; Variáveis, fatores, tratamentos e objetos de estudo; Desenho experimental
 ### 3.1 Modelo conceitual
 
 O modelo conceitual do estudo parte da hipótese de que o **estilo arquitetural** adotado em um sistema (Clean Architecture ou arquitetura em camadas tradicional) influencia:
@@ -276,6 +288,8 @@ Em termos conceituais:
   - **Esforço de modificação** (tempo, tamanho da mudança, sucesso);
   - **Percepções de manutenção/evolução** (Likert).
 - **Perfil do participante** (experiência com Spring Boot, contato prévio com Clean Architecture, experiência profissional) atua como **variáveis de controle/covariáveis**, podendo moderar os efeitos observados, mas não é manipulado no experimento.
+
+---
 
 ### 3.2 Hipóteses do estudo
 
@@ -363,7 +377,7 @@ Essa construção garante comparabilidade entre as arquiteturas, já que o domí
 
 ### 3.4 Desenho experimental
 
-O desenho experimental é do tipo **intra-sujeito (within-subjects)**: todos os participantes realizam as mesmas tarefas em ambas as arquiteturas, em momentos distintos. A ordem das arquiteturas é contrabalanceada entre os participantes, de forma que aproximadamente metade da turma começa pela arquitetura em camadas e a outra metade pela Clean Architecture. :contentReference[oaicite:1]{index=1}  
+O desenho experimental é do tipo **intra-sujeito (within-subjects)**: todos os participantes realizam as mesmas tarefas em ambas as arquiteturas, em momentos distintos. A ordem das arquiteturas é contrabalanceada entre os participantes, de forma que aproximadamente metade da turma começa pela arquitetura em camadas e a outra metade pela Clean Architecture.
 
 O experimento é estruturado em três etapas principais:
 
@@ -386,6 +400,7 @@ Ao final do experimento, o questionário também coleta percepções globais sob
 
 ---
 
+### 4. População, sujeitos e amostragem; Instrumentação e protocolo operacional; Plano de análise de dados (pré-execução)
 ### 4.1 População, sujeitos e amostragem
 
 - **População-alvo**  
@@ -548,6 +563,8 @@ O plano de análise é definido **antes da execução** do experimento, para red
 
 Esse plano de análise garante que, ao final da coleta, o experimento esteja alinhado ao problema de pesquisa, às hipóteses formuladas e às boas práticas de experimentação em Engenharia de Software.
 
+---
+
 ### 4.5 Fluxograma operacional do experimento
 
 O fluxograma a seguir sintetiza o passo a passo operacional do experimento, destacando os principais stakeholders envolvidos, instrumentos utilizados, variáveis e métricas coletadas em cada etapa.
@@ -566,4 +583,110 @@ flowchart TD
     J --> K["Consolidação dos dados (autor e orientadores)"]
     K --> L["Análise estatística e interpretação (aplicação do plano da Seção 4.4)"]
     L --> M["Redação dos resultados e conclusões (autor e orientadores)"]
+
+### 5. Avaliação de validade (ameaças e mitigação)
+### 5.1 Visão geral de validade
+
+A validade do experimento diz respeito ao quão confiáveis e generalizáveis são os resultados obtidos. Nesta entrega, são analisadas as principais ameaças às seguintes dimensões de validade:
+
+- **Validade de construto** – se as métricas realmente representam “clareza de design” e “facilidade de evolução”.  
+- **Validade interna** – se diferenças observadas podem ser atribuídas, de fato, ao estilo arquitetural, e não a outros fatores.  
+- **Validade externa** – se os resultados podem ser generalizados para outros contextos, pessoas, tecnologias e domínios.  
+- **Validade de conclusão estatística** – se os testes estatísticos e o tamanho da amostra suportam conclusões confiáveis.
+
+---
+
+### 5.2 Principais ameaças à validade
+
+#### 5.2.1 Validade de construto
+
+- **Ameaça C1 – Métricas não capturarem plenamente “clareza de design”**  
+  As métricas subjetivas (Likert) e os tempos de compreensão podem não refletir todos os aspectos de clareza de design, como legibilidade, consistência de nomenclatura ou uso de padrões de projeto específicos.
+
+- **Ameaça C2 – Métricas não capturarem totalmente “facilidade de evolução”**  
+  A facilidade de evolução é avaliada por tempo de implementação, tamanho da mudança e taxa de sucesso, mas não inclui, por exemplo, o impacto de mudanças futuras, refatorações mais profundas ou evolução em longo prazo.
+
+---
+
+#### 5.2.2 Validade interna
+
+- **Ameaça I1 – Efeito de aprendizagem e ordem das arquiteturas**  
+  Como o mesmo participante executa tarefas nas duas arquiteturas, ele pode aprender sobre o domínio ou a funcionalidade na primeira execução e ficar naturalmente mais rápido na segunda, independentemente da arquitetura.
+
+- **Ameaça I2 – Influência do ambiente e do tempo de aula**  
+  Diferenças de barulho, atenção, cansaço (aula no início ou no final do dia) e tempo restante de aula podem influenciar o desempenho, independentemente da arquitetura utilizada.
+
+---
+
+#### 5.2.3 Validade externa
+
+- **Ameaça E1 – Generalização de estudantes para profissionais**  
+  A amostra é composta por estudantes de Engenharia de Software, que podem se comportar de forma diferente de desenvolvedores profissionais com anos de experiência em arquitetura.
+
+- **Ameaça E2 – Generalização para outros domínios e tecnologias**  
+  O experimento considera apenas um sistema, em um domínio específico, implementado em Java 17 e Spring Boot 3.3.x. Os resultados podem ser diferentes em outros domínios, linguagens ou frameworks.
+
+---
+
+#### 5.2.4 Validade de conclusão estatística
+
+- **Ameaça S1 – Tamanho da amostra e poder estatístico**  
+  Caso o número de participantes efetivamente válidos seja menor que o planejado (por exemplo, ausências no dia da aplicação), o poder estatístico pode ser insuficiente para detectar diferenças reais entre arquiteturas.
+
+- **Ameaça S2 – Violação de pressupostos dos testes ou múltiplas comparações**  
+  Mesmo utilizando testes não paramétricos, a presença de outliers extremos ou muitos testes simultâneos aumenta o risco de erros do tipo I (falso positivo) ou do tipo II (falso negativo).
+
+---
+
+### 5.3 Estratégias de mitigação das ameaças
+
+#### 5.3.1 Mitigação – Validade de construto
+
+- **Para C1 (clareza de design)**  
+  - Utilizar **conjunto de métricas complementares**: tempo de compreensão (M1), clareza percebida (M4) e clareza da organização de classes/pacotes (M6).  
+  - Formular itens do questionário de forma clara, testando previamente com um pequeno grupo (piloto) para verificar se os participantes entendem o que está sendo perguntado.  
+  - Incluir um campo opcional para comentários qualitativos, permitindo interpretar melhor respostas extremas.
+
+- **Para C2 (facilidade de evolução)**  
+  - Combinar métricas objetivas (M2, M3, M11) com percepções subjetivas de facilidade de implementação e navegação (M7, M8).  
+  - Escolher uma modificação funcional suficientemente realista, mas com escopo controlado, para refletir uma tarefa típica de manutenção sem exigir conhecimento avançado específico.
+
+---
+
+#### 5.3.2 Mitigação – Validade interna
+
+- **Para I1 (efeito de aprendizagem e ordem)**  
+  - Utilizar o **contrabalançamento da ordem**: metade dos participantes inicia pela arquitetura em camadas e metade pela Clean Architecture, reduzindo o viés sistemático de uma arquitetura sempre vir primeiro.  
+  - Garantir que a tarefa de modificação seja equivalente em complexidade nas duas arquiteturas (mesmo requisito e mesma cobertura de testes).
+
+- **Para I2 (influência do ambiente e tempo de aula)**  
+  - Aplicar o experimento em **uma única aula dedicada**, com tempo reservado e ambiente previamente testado (laboratório, ferramentas instaladas).  
+  - Fornecer um roteiro oral e escrito padronizado, reduzindo variações de instrução entre turmas ou horários.
+
+---
+
+#### 5.3.3 Mitigação – Validade externa
+
+- **Para E1 (estudantes vs profissionais)**  
+  - Caracterizar detalhadamente a amostra (experiência prévia, contato com Spring Boot e Clean Architecture) para que outros pesquisadores entendam o perfil dos sujeitos.  
+  - Discutir explicitamente, na seção de Discussão do TCC, que os resultados se aplicam primariamente a **desenvolvedores em formação** e que replicações com profissionais são desejáveis.
+
+- **Para E2 (outros domínios e tecnologias)**  
+  - Descrever o domínio do sistema e as principais decisões técnicas, permitindo que outros avaliem o quão semelhantes são a seus próprios contextos.  
+  - Ressaltar, nas conclusões, que o experimento fornece **evidências em um cenário específico**, e que a generalização para outros domínios e stacks deve ser feita com cautela.
+
+---
+
+#### 5.3.4 Mitigação – Validade de conclusão estatística
+
+- **Para S1 (tamanho da amostra)**  
+  - Planejar a aplicação do experimento em turma com cerca de 70 alunos e registrar a taxa de participação efetiva.  
+  - Em caso de amostra menor, relatar essa limitação de forma transparente e enfatizar mais a interpretação de **efeitos observados** e tamanhos de efeito (além do p-valor).
+
+- **Para S2 (pressupostos e múltiplas comparações)**  
+  - Utilizar testes não paramétricos pareados (Wilcoxon Signed-Rank), mais robustos a violações de normalidade.  
+  - Inspecionar visualmente distribuições e outliers e, se necessário, realizar análises complementares (por exemplo, sem outliers extremos).  
+  - Explicitar o número de testes realizados e interpretar os resultados de forma conservadora, evitando afirmar conclusões fortes a partir de diferenças marginais.
+
+---
 
