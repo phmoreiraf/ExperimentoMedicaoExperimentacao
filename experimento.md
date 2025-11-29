@@ -22,7 +22,7 @@ Impactos na Clareza de Design e Facilidade de Evolução**
 - **Instituição**  
   Instituto de Ciências Exatas e Informática – Pontifícia Universidade Católica de Minas Gerais (PUC Minas), Belo Horizonte – MG – Brasil.
 
-- **Versão deste documento de planejamento: **  v1.3
+- **Versão deste documento de planejamento:**  v1.3
 
 ---
 
