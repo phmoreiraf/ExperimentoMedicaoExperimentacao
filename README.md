@@ -2,3 +2,5 @@ Trabalho final contendo um experimento para pr√°ticas de escrita de TCC, na mat√
 
 
 [Experimento](experimento.md)
+[Video](VideoExperimentoArquitetura.mp4)
+[Link do video](https://drive.google.com/file/d/1PvflnZXIm7q-CsInIaTU-vhgH5T78CtL/view?usp=sharing)
