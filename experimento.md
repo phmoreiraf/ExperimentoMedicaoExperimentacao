@@ -113,7 +113,7 @@ O experimento irá:
 
 #### 2.2.1 Objetivo geral
 
-> **Comparar a Clean Architecture e a arquitetura em camadas tradicional quanto à clareza de design e à facilidade de evolução de sistemas Java/Spring Boot, com base em métricas objetivas e percepções dos desenvolvedores.**
+> **Comparar a Clean Architecture e a arquitetura em camadas tradicional quanto à clareza de design e à facilidade de evolução de sistemas/projetos, com base em métricas objetivas e percepções dos desenvolvedores.**
 
 #### 2.2.2 Objetivos específicos
 
@@ -583,6 +583,7 @@ flowchart TD
     J --> K["Consolidação dos dados (autor e orientadores)"]
     K --> L["Análise estatística e interpretação (aplicação do plano da Seção 4.4)"]
     L --> M["Redação dos resultados e conclusões (autor e orientadores)"]
+```
 
 ### 5. Avaliação de validade (ameaças e mitigação)
 ### 5.1 Visão geral de validade
