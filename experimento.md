@@ -9,8 +9,8 @@
 **Avaliação Experimental da Clean Architecture versus Arquitetura em Camadas: Impactos na Clareza de Design e Facilidade de Evolução**
 
 ### 1.2 ID / código
-- **ID / código do estudo**: _A definir pela coordenação / sistema acadêmico da disciplina de TCC I._
-
+- **ID / código do estudo**: 1389014
+- 
 ### 1.3 Versão do documento e histórico de revisão
 - **Versão atual do plano**: v1.3  
 - **Histórico resumido**:
