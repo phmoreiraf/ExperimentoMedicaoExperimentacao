@@ -10,7 +10,7 @@
 
 ### 1.2 ID / código
 - **ID / código do estudo**: 1389014
-- 
+
 ### 1.3 Versão do documento e histórico de revisão
 - **Versão atual do plano**: v1.3  
 - **Histórico resumido**:
