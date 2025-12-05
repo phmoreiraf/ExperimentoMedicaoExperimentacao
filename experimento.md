@@ -420,7 +420,7 @@ A ordem é determinada pela sequência (Seq1 ou Seq2).
 
 ### 9.1 Tipo de desenho
 
-- **Desenho intra-sujeito (within-subjects)**: todos os participantes executam as mesmas tarefas em ambas as arquiteturas. :contentReference[oaicite:11]{index=11}  
+- **Desenho intra-sujeito (within-subjects)**: todos os participantes executam as mesmas tarefas em ambas as arquiteturas. 
 
 ### 9.2 Randomização e alocação
 
@@ -492,7 +492,7 @@ A ordem é determinada pela sequência (Seq1 ou Seq2).
 - Cronômetros (físicos ou digitais) para tempos de compreensão (M1) e implementação (M2).  
 - Questionário eletrônico (Google Forms) para:
   - Dados de perfil.  
-  - Itens Likert M4–M10. :contentReference[oaicite:13]{index=13}  
+  - Itens Likert M4–M10.
 - Scripts de extração de `git diff` (quando aplicável).  
 - Planilhas para consolidação dos dados.
 
