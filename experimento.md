@@ -488,6 +488,24 @@ A ordem é determinada pela sequência (Seq1 ou Seq2).
 
 ## 11. Instrumentação e protocolo operacional
 
+O fluxograma a seguir sintetiza o passo a passo operacional do experimento, destacando os principais stakeholders envolvidos, instrumentos utilizados, variáveis e métricas coletadas em cada etapa.
+
+```mermaid
+flowchart TD
+    A["Planejamento do experimento (autor e orientadores)"] --> B["Preparação do ambiente (laboratório, IDE, JDK 17, Git, formulários)"]
+    B --> C["Configuração dos repositórios (Arquitetura em Camadas e Clean Architecture)"]
+    C --> D["Definição dos grupos Seq1 e Seq2 (ordem Camadas-Clean ou Clean-Camadas)"]
+    D --> E["Briefing aos participantes (objetivo, ética, instruções gerais)"]
+    E --> F["Tarefa 1 - Compreensão na Arquitetura 1 (coleta de M1, M4, M6)"]
+    F --> G["Tarefa 2 - Implementação na Arquitetura 1 (coleta de M2, M3, M11, M5, M7, M8, M9)"]
+    G --> H["Tarefa 3 - Compreensão na Arquitetura 2 (coleta de M1, M4, M6)"]
+    H --> I["Tarefa 4 - Implementação na Arquitetura 2 (coleta de M2, M3, M11, M5, M7, M8, M9, M10)"]
+    I --> J["Encerramento em sala (comentários qualitativos dos estudantes)"]
+    J --> K["Consolidação dos dados (autor e orientadores)"]
+    K --> L["Análise estatística e interpretação (aplicação do plano da Seção 4.4)"]
+    L --> M["Redação dos resultados e conclusões (autor e orientadores)"]
+```
+
 ### 11.1 Instrumentos de coleta (questionários, logs, planilhas, etc.)
 
 - Repositórios Git (Camadas e Clean).  
