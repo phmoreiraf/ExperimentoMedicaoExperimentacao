@@ -72,7 +72,7 @@ Apesar do uso difundido dessas abordagens, **faltam evidências empíricas contr
 
 - **Processo / forma de execução**  
   - Estudo empírico do tipo **experimento controlado em sala de aula**, com delineamento **intra-sujeito (within-subjects)**.  
-  - Participantes: aproximadamente 70 estudantes de Engenharia de Software. :contentReference[oaicite:3]{index=3}  
+  - Participantes: aproximadamente 70 estudantes de Engenharia de Software. 
   - Tarefas: compreensão de código, implementação de modificação simples e resposta a questionário.
 
 ### 2.3 Trabalhos e evidências prévias (internos e externos)
@@ -80,19 +80,19 @@ Apesar do uso difundido dessas abordagens, **faltam evidências empíricas contr
 O experimento se ancora em trabalhos que tratam de:
 
 - **Trade-offs de patterns e arquiteturas**  
-  - Vale et al. (2022): estudo empírico com profissionais sobre _patterns_ em microserviços e seus impactos em atributos de qualidade (desempenho, escalabilidade, manutenibilidade, etc.). :contentReference[oaicite:4]{index=4}  
+  - Vale et al. (2022): estudo empírico com profissionais sobre _patterns_ em microserviços e seus impactos em atributos de qualidade (desempenho, escalabilidade, manutenibilidade, etc.).
   - Bogner et al. (2024): experimento controlado com 65 participantes sobre padrões de API em microserviços, usando o indicador TAU (Timed Actual Understandability).
 
 - **Impacto de padrões de projeto em manutenibilidade**  
   - Elish (2025): estudo empírico sobre _Maintainability Index_ e uso de padrões de projeto.  
-  - Zhang & Li (2022): efeitos de _over-engineering_ com padrões sobre manutenibilidade, mostrando que aplicar padrões sem força motriz clara pode piorar a manutenção. :contentReference[oaicite:5]{index=5}  
+  - Zhang & Li (2022): efeitos de _over-engineering_ com padrões sobre manutenibilidade, mostrando que aplicar padrões sem força motriz clara pode piorar a manutenção. 
 
 - **Dívida arquitetural e _smells_**  
   - Sousa (2024): abordagem sistemática para identificar dívida arquitetural.  
   - Wedyan & Abufakher (2020): revisão sistemática sobre impacto de padrões na qualidade. :contentReference[oaicite:6]{index=6}  
 
 - **Desafios em estudos empíricos em arquitetura**  
-  - Falessi et al. (2010): destacam a carência de evidências empíricas sistemáticas em arquitetura e os desafios para experimentos controlados, replicação e uso de métodos mistos. :contentReference[oaicite:7]{index=7}  
+  - Falessi et al. (2010): destacam a carência de evidências empíricas sistemáticas em arquitetura e os desafios para experimentos controlados, replicação e uso de métodos mistos.
 
 Internamente, o projeto de TCC já definiu:
 
@@ -104,12 +104,12 @@ Internamente, o projeto de TCC já definiu:
 **Clean Architecture**  
 - Estilo voltado a manter o núcleo de regras de negócio independente de detalhes de implementação.  
 - Organização em círculos concêntricos (entidades, casos de uso, adaptadores, frameworks/drivers), com dependências apontando sempre de fora para dentro.  
-- Objetivo: favorecer clareza de design, testabilidade e facilidade de evolução, especialmente em cenários com mudanças tecnológicas frequentes. :contentReference[oaicite:8]{index=8}  
+- Objetivo: favorecer clareza de design, testabilidade e facilidade de evolução, especialmente em cenários com mudanças tecnológicas frequentes. 
 
 **Arquitetura em camadas tradicional**  
 - Organização horizontal em camadas (apresentação, negócio, dados, infraestrutura).  
 - Fortemente suportada por frameworks (controller, service, repository em Spring Boot).  
-- Simplicidade e familiaridade, mas com risco de acoplamento maior entre lógica de negócio e detalhes de infraestrutura. :contentReference[oaicite:9]{index=9}  
+- Simplicidade e familiaridade, mas com risco de acoplamento maior entre lógica de negócio e detalhes de infraestrutura.  
 
 **Referencial empírico**  
 - Uso de métricas objetivas (tempo, tamanho da mudança, MI, smells, etc.) e de percepções (Likert) para avaliar impactos de estilo arquitetural em clareza, compreensibilidade e manutenção.  
