@@ -22,7 +22,6 @@ Impactos na Clareza de Design e Facilidade de Evolução
 
 ### 1.4 Datas (criação, última atualização)
 - **Data de criação deste plano**: 23/11/2025
-- **Aatualização**: 30/11/2025
 - **Última atualização**: 05/12/2025  
 
 ### 1.5 Autores (nome, área, contato)
