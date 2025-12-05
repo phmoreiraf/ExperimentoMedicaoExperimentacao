@@ -43,7 +43,7 @@
 
 ### 2.1 Descrição do problema / oportunidade
 
-Decisões de arquitetura de software influenciam diretamente a compreensão, a evolução e a manutenibilidade de sistemas, afetando esforço, custo e qualidade do produto. A literatura sobre dívida arquitetural e padrões de projeto indica que decisões estruturais mal fundamentadas tendem a aumentar defeitos, retrabalho, esforço de manutenção e risco de _smells_ ao longo do tempo, além de impactar atributos como testabilidade e capacidade de evolução. :contentReference[oaicite:1]{index=1}  
+Decisões de arquitetura de software influenciam diretamente a compreensão, a evolução e a manutenibilidade de sistemas, afetando esforço, custo e qualidade do produto. A literatura sobre dívida arquitetural e padrões de projeto indica que decisões estruturais mal fundamentadas tendem a aumentar defeitos, retrabalho, esforço de manutenção e risco de _smells_ ao longo do tempo, além de impactar atributos como testabilidade e capacidade de evolução.  
 
 Nesse cenário:
 
@@ -61,7 +61,7 @@ Apesar do uso difundido dessas abordagens, **faltam evidências empíricas contr
   - Curso de Bacharelado em Engenharia de Software – PUC Minas.  
   - Experimento conduzido em disciplina com laboratório de informática, como parte de TCC I/TCC II.
 
-- **Ambiente técnico do experimento** :contentReference[oaicite:2]{index=2}  
+- **Ambiente técnico do experimento** 
   - Linguagem: Java 17  
   - Framework: Spring Boot 3.3.x  
   - Ferramentas:
@@ -89,7 +89,7 @@ O experimento se ancora em trabalhos que tratam de:
 
 - **Dívida arquitetural e _smells_**  
   - Sousa (2024): abordagem sistemática para identificar dívida arquitetural.  
-  - Wedyan & Abufakher (2020): revisão sistemática sobre impacto de padrões na qualidade. :contentReference[oaicite:6]{index=6}  
+  - Wedyan & Abufakher (2020): revisão sistemática sobre impacto de padrões na qualidade.  
 
 - **Desafios em estudos empíricos em arquitetura**  
   - Falessi et al. (2010): destacam a carência de evidências empíricas sistemáticas em arquitetura e os desafios para experimentos controlados, replicação e uso de métodos mistos.
@@ -355,7 +355,7 @@ Para cada hipótese substantiva, define-se:
 
 ### 7.3 Nível de significância e considerações de poder
 
-- **Nível de significância (α)**: 0,05. :contentReference[oaicite:10]{index=10}  
+- **Nível de significância (α)**: 0,05. 
 - **Poder estatístico**:
   - Espera-se uma amostra de aproximadamente 70 participantes, com medidas pareadas (intra-sujeito), o que tende a aumentar o poder para detectar diferenças moderadas.  
   - Em caso de amostra substancialmente menor, os resultados serão interpretados com cautela, enfatizando tamanhos de efeito e não apenas p-valores.
@@ -464,7 +464,7 @@ A ordem é determinada pela sequência (Seq1 ou Seq2).
 
 ### 10.4 Tamanho da amostra planejado (por grupo)
 
-- Turma com aproximadamente 70 estudantes. :contentReference[oaicite:12]{index=12}  
+- Turma com aproximadamente 70 estudantes. 
 - Distribuição planejada:
   - ~35 participantes em Seq1.  
   - ~35 participantes em Seq2.  
@@ -544,7 +544,7 @@ flowchart TD
 - **Passo 1** – Limpeza e verificação de consistência (pares completos Camadas/Clean para cada participante).  
 - **Passo 2** – Estatísticas descritivas (médias, medianas, desvio-padrão, IQR).  
 - **Passo 3** – Testes de normalidade (Shapiro–Wilk) para M1, M2, M3.  
-- **Passo 4** – Testes pareados (Wilcoxon Signed-Rank) para comparação entre arquiteturas. :contentReference[oaicite:14]{index=14}  
+- **Passo 4** – Testes pareados (Wilcoxon Signed-Rank) para comparação entre arquiteturas. 
 - **Passo 5** – Análises de correlação (Spearman) entre métricas objetivas e percepções subjetivas (H4).  
 - **Passo 6** – Interpretação dos resultados à luz das hipóteses H1–H4.
 
