@@ -1,6 +1,4 @@
 # Plano de Experimento – Scoping e Planejamento  
-## Avaliação Experimental da Clean Architecture versus Arquitetura em Camadas: Impactos na Clareza de Design e Facilidade de Evolução
-
 ## 1. Identificação básica
 
 ### 1.1 Título do experimento
