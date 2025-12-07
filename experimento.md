@@ -121,7 +121,7 @@ Internamente, o projeto de TCC já definiu:
 
 ### 3.1 Objetivo geral (Goal template / GQM)
 
-> **Analisar** duas versões de um mesmo sistema Java/Spring Boot (uma em arquitetura em camadas tradicional e outra em Clean Architecture)  
+> **Analisar** versões de um mesmo sistema/projeto (usando arquitetura em camadas tradicional e Clean Architecture)  
 > **com o propósito de** comparar empiricamente estilos arquiteturais  
 > **com respeito ao** impacto na clareza de design e na facilidade de evolução do código  
 > **do ponto de vista de** estudantes e pesquisadores de Engenharia de Software  
