@@ -675,7 +675,7 @@ Mitigação:
 
 - **TCC I (Segundo semestre de 2025)** – elaboração do plano (este documento) e dos protótipos.  
 - **TCC II (fev–jun/2026)** – execução do experimento em sala de aula, extração de métricas e análise.  
-- Cronograma quinzenal do TCC II já foi detalhado em tabela específica do trabalho principal e abaixo pensando no modelo para 2026:
+- Cronograma quinzenal do TCC II já foi detalhado em tabela específica do trabalho principal e abaixo pensando no modelo para 2026 e o TCC sera executado em dupla:
 
 | Quinzena (2026) | Atividades de Gabriel Vitor                                                                                               | Atividades de Pedro Henrique                                                                                                                      |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
