@@ -14,10 +14,11 @@
   - **v1.1** – Inclusão e refinamento do modelo GQM, detalhamento de métricas e tarefas dos participantes.
   - **v1.2** – Consolidação do delineamento intra-sujeito, protocolo operacional em sala de aula e plano de análise de dados.
   - **v1.3** – Alinhamento completo ao template de “Plano de Experimento – Scoping e Planejamento”, com inclusão explícita de seções sobre validade, ética, governança, documentação e comunicação.
+  - **v1.4** - Finalização do documento para realizar a entrega e ajustes finais.
 
 ### 1.4 Datas (criação, última atualização)
 - **Data de criação deste plano**: 23/11/2025
-- **Última atualização**: 05/12/2025  
+- **Última atualização**: 12/12/2025  
 
 ### 1.5 Autores (nome, área, contato)
 - **Pedro Henrique Moreira Caixeta Ferreira**  
@@ -63,7 +64,7 @@ A pesquisa proposta busca justamente preencher essa lacuna, por meio de um **exp
     - IDE: IntelliJ IDEA 2024.2 (ou equivalente compatível)  
     - Controle de versão: Git  
     - Coleta de percepções: Google Forms (questionário eletrônico)
-  - Ambiente: laboratório de informática com estações homogêneas (hardware e software) e acesso à internet/repositórios.
+  - Ambiente: Controlado usando laboratório de informática com estações homogêneas (hardware e software) e acesso à internet/repositórios.
 
 - **Processo / forma de execução**  
   - Estudo empírico do tipo **experimento controlado em sala de aula**, com delineamento **intra-sujeito (within-subjects)**.  
@@ -672,9 +673,22 @@ Mitigação:
 
 ### 16.1 Macrocronograma (até o início da execução)
 
-- **TCC I (2025)** – elaboração do plano (este documento) e dos protótipos.  
+- **TCC I (Segundo semestre de 2025)** – elaboração do plano (este documento) e dos protótipos.  
 - **TCC II (fev–jun/2026)** – execução do experimento em sala de aula, extração de métricas e análise.  
-- Cronograma quinzenal do TCC II já foi detalhado em tabela específica do trabalho principal.
+- Cronograma quinzenal do TCC II já foi detalhado em tabela específica do trabalho principal e abaixo pensando no modelo para 2026:
+
+| Quinzena (2026) | Atividades de Gabriel Vitor                                                                                               | Atividades de Pedro Henrique                                                                                                                      |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01–15/fev       | Revisar e estabilizar o protótipo em *Clean Architecture*, ajustando estrutura de pacotes e dependências.                 | Revisar o protótipo em arquitetura em camadas, ajustando configuração de *build* e garantindo equivalência funcional em relação à versão *Clean*. |
+| 16–28/fev       | Implementar e testar scripts de extração de métricas (CK e complexidade) em ambiente local.                               | Organizar repositórios, pastas de saída e modelos de planilha para receber as métricas geradas pelos scripts.                                     |
+| 01–15/mar       | Executar a extração inicial de métricas na versão *Clean* e salvar arquivos brutos de resultados.                         | Importar e padronizar as métricas iniciais das duas arquiteturas em uma planilha consolidada, verificando inconsistências e valores ausentes.     |
+| 16–31/mar       | Propor e documentar cenários de evolução simulados e aplicar as modificações planejadas na versão *Clean*.                | Revisar os cenários propostos, estimar impacto em cada camada e implementar as mesmas modificações na versão em camadas.                          |
+| 01–15/abr       | Gerar e arquivar os arquivos *git diff* relativos às mudanças na versão *Clean*, etiquetando commits relevantes.          | Gerar os arquivos *git diff* da versão em camadas e sintetizar, em planilha, o tipo e a quantidade de alterações em cada arquitetura.             |
+| 16–30/abr       | Executar a extração de métricas pós-modificação para as duas versões, garantindo a execução correta dos scripts.          | Conferir e integrar métricas pré e pós-modificação em um conjunto de dados único, documentando as transformações e filtros aplicados.             |
+| 01–15/mai       | Calcular estatísticas descritivas e variações das métricas para a versão *Clean* e elaborar primeiras tabelas numéricas.  | Calcular estatísticas descritivas e variações das métricas para a versão em camadas e apoiar a montagem das tabelas comparativas.                 |
+| 16–31/mai       | Integrar os resultados das duas arquiteturas em gráficos e quadros-resumo, apontando tendências iniciais.                 | Redigir rascunhos de interpretação dos resultados e listar ameaças à validade internas e externas a partir dos gráficos e tabelas.                |
+| 01–15/jun       | Redigir a versão inicial da seção de Resultados, descrevendo procedimentos de análise e principais achados quantitativos. | Redigir a versão inicial da seção de Discussão, relacionando os achados com os trabalhos relacionados e com os objetivos do estudo.               |
+| 16–30/jun       | Revisar o conteúdo técnico do TCC, checando coerência entre texto, figuras, tabelas e referências.                        | Revisar linguagem e formatação no padrão SBC, preparar os arquivos finais e realizar a submissão da versão definitiva do TCC.                     |
 
 ### 16.2 Dependências entre atividades
 
