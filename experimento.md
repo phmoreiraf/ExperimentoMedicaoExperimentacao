@@ -39,14 +39,13 @@
 
 ### 2.1 Descrição do problema / oportunidade
 
-Decisões de arquitetura de software influenciam diretamente a compreensão, a evolução e a manutenibilidade de sistemas, afetando esforço, custo e qualidade do produto. A literatura sobre dívida arquitetural e padrões de projeto indica que decisões estruturais mal fundamentadas tendem a aumentar defeitos, retrabalho, esforço de manutenção e risco de _smells_ ao longo do tempo, além de impactar atributos como testabilidade e capacidade de evolução.  
+Decisões de arquitetura de software influenciam diretamente a compreensão, a evolução e a manutenibilidade de sistemas, afetando esforço, custo e qualidade do produto. A literatura sobre dívida arquitetural e padrões de projeto mostra que escolhas estruturais mal fundamentadas tendem a aumentar defeitos, retrabalho e esforço de manutenção, além de impactar atributos como testabilidade e capacidade de evolução do código.
 
-Nesse cenário:
+Nesse cenário, a **arquitetura em camadas tradicional** consolidou-se como um estilo amplamente adotado e ensinado, oferecendo uma organização relativamente simples, conhecida e suportada por diversos frameworks. Em paralelo, abordagens como a **Clean Architecture** propõem maior independência de detalhes de infraestrutura e maior isolamento do domínio, com separação mais rigorosa entre regras de negócio e mecanismos de entrega, persistência e acesso a dados.
 
-- A **arquitetura em camadas tradicional** consolidou-se como um estilo amplamente adotado, frequentemente a primeira forma de separação de responsabilidades ensinada em materiais didáticos e suportada por frameworks (controller–service–repository).
-- A **Clean Architecture** propõe maior independência do domínio em relação a detalhes de infraestrutura, com separação mais rigorosa entre regras de negócio e mecanismos de entrega, persistência e integração.
+Apesar do avanço da literatura sobre arquitetura, ainda existem poucas evidências empíricas *controladas* que comparem, em um mesmo conjunto de funcionalidades, a Clean Architecture e a arquitetura em camadas tradicional sob a perspectiva de **clareza de design** e **facilidade de evolução**. Em muitas discussões técnicas, a Clean Architecture é apresentada quase como “sucessora natural” da arquitetura em camadas, mas essa percepção nem sempre se baseia em resultados experimentais sistemáticos.
 
-Apesar do uso difundido dessas abordagens, **faltam evidências empíricas controladas** que comparem, em um mesmo conjunto de funcionalidades, a Clean Architecture e a arquitetura em camadas sob a perspectiva de **clareza de design** e **facilidade de evolução**. Muitas vezes, a Clean Architecture é tratada como “evolução natural” da arquitetura em camadas com base em opiniões e relatos de experiência, e não em dados.
+A pesquisa proposta busca justamente preencher essa lacuna, por meio de um **experimento controlado em sala de aula** com estudantes de Engenharia de Software, analisando a forma como desenvolvedores compreendem e modificam sistemas funcionalmente equivalentes que diferem apenas em seu estilo arquitetural.
 
 > **Problema central**  
 > Em que medida a adoção da Clean Architecture, em comparação à arquitetura em camadas tradicional, impacta a clareza do design e a facilidade de evolução de sistemas de software, considerando aspectos como compreensibilidade, modularidade, manutenibilidade e esforço de modificação?
@@ -444,7 +443,7 @@ A ordem é determinada pela sequência (Seq1 ou Seq2).
 
 ### 10.1 População-alvo
 
-- Desenvolvedores de software (profissionais ou estudantes avançados) que trabalham com aplicações web e precisam tomar decisões arquiteturais entre estilos como Clean Architecture e arquitetura em camadas.
+- Desenvolvedores de software (profissionais ou estudantes avançados) que trabalham com aplicações web/APIs e precisam tomar decisões arquiteturais entre estilos como Clean Architecture e arquitetura em camadas.
 
 ### 10.2 Critérios de inclusão de sujeitos
 
@@ -630,7 +629,7 @@ Mitigação:
 ### 14.3 Privacidade e proteção de dados
 
 - Não serão coletados dados pessoais sensíveis; apenas:
-  - Idade (faixa), experiência prévia (sim/não) e identificadores internos (código).  
+- Idade (faixa), experiência prévia (sim/não) e identificadores internos (código).  
 - Dados serão armazenados em planilhas e repositórios controlados pelos autores e orientadores.  
 - Relatórios e o TCC não identificarão participantes individualmente.
 
@@ -652,8 +651,8 @@ Mitigação:
 ### 15.2 Infraestrutura técnica necessária
 
 - Laboratório de informática com:
-  - Máquinas com JDK 17, IntelliJ IDEA (ou equivalente), Git.  
-  - Acesso aos repositórios (GitHub ou similar).  
+- Máquinas com JDK 17, IntelliJ IDEA (ou equivalente), Git.  
+- Acesso aos repositórios (GitHub ou similar).  
 - Acesso à internet para uso de Google Forms (ou alternativa).
 
 ### 15.3 Materiais e insumos
